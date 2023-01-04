@@ -1,0 +1,21 @@
+import random
+
+print("Do you want to start the GAME ?")
+print("Press Y/N")
+start=input()
+start=start.upper()
+if start == "Y":
+    print("Your GAME is started")
+
+    guess_number = input("Input your Guess number Between (1-5) : ")
+    list1 = [1, 2, 3, 4, 5]
+    a = random.choice(list1)
+    print("Your Random Number is : ", a)
+
+    if a == guess_number:
+        print("Congrats! You Won this game")
+    else:
+        print("Good Try, Play again")
+
+else :
+    print("Your GAME is Closed")
