@@ -1,12 +1,12 @@
 import random
 
 print("Do you want to start the GAME ?")
-print("Press Y/N")
+print("Press Y/N to start or and")
 start=input()
 start=start.upper()
 if start == "Y":
     print("Your GAME is started")
-
+    print("This is a 'GUESSING GAME'")
     guess_number = input("Input your Guess number Between (1-5) : ")
     list1 = [1, 2, 3, 4, 5]
     a = random.choice(list1)
@@ -15,7 +15,7 @@ if start == "Y":
     if a == guess_number:
         print("Congrats! You Won this game")
     else:
-        print("Good Try, Play again")
+        print("You Lost. But Good Try, Play again")
 
 else :
     print("Your GAME is Closed")
